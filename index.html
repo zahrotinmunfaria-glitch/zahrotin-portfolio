@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahrotin Munfaria | IoT Digitalization Specialist & Industrial Automation Engineer</title>
+    <meta name="description" content="Portofolio Zahrotin Munfaria - Staff IoT Digitalization PT Parkland World Indonesia 3, Industrial Automation Engineer, & Lulusan UNNES (IPK 3.80). Pemrograman PLC, ESP32, Andon Systems, & QMS.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4f9',
+                            100: '#d9e2ec',
+                            200: '#bcccdc',
+                            300: '#9fb3c8',
+                            400: '#829ab1',
+                            500: '#627d98',
+                            600: '#486581',
+                            700: '#334e68',
+                            800: '#243b53',
+                            900: '#0f172a',
+                            950: '#0b1120',
+                        },
+                        gold: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    boxShadow: {
+                        'gold-glow': '0 10px 30px -10px rgba(217, 119, 6, 0.25)',
+                        'navy-glow': '0 10px 35px -10px rgba(15, 23, 42, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #78350f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .navy-gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- ================= TOP LANGUAGE BAR & NAVBAR ================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/90 border-b border-slate-200/80 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl navy-gradient-bg flex items-center justify-center text-gold-400 font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    ZM
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-navy-900 tracking-tight block leading-tight">Zahrotin Munfaria</span>
+                    <span class="text-xs font-semibold text-gold-600 tracking-wider uppercase block" data-id="IoT Digitalization & Automation Specialist" data-en="IoT Digitalization & Automation Specialist">IoT Digitalization & Automation Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7">
+                <a href="#about" class="nav-link text-sm font-semibold text-slate-600 hover:text-navy-900 transition-colors py-1" data-id="Tentang" data-en="About">Tentang</a>
+                <a href="#experience" class="nav-link text-sm font-semibold text-slate-600 hover:text-navy-900 transition-colors py-1" data-id="Pengalaman" data-en="Experience">Pengalaman</a>
+                <a href="#projects" class="nav-link text-sm font-semibold text-slate-600 hover:text-navy-900 transition-colors py-1" data-id="Proyek" data-en="Projects">Proyek</a>
+                <a href="#skills" class="nav-link text-sm font-semibold text-slate-600 hover:text-navy-900 transition-colors py-1" data-id="Keahlian" data-en="Skills">Keahlian</a>
+                <a href="#education" class="nav-link text-sm font-semibold text-slate-600 hover:text-navy-900 transition-colors py-1" data-id="Pendidikan" data-en="Education">Pendidikan</a>
+                <a href="#contact" class="nav-link text-sm font-semibold text-slate-600 hover:text-navy-900 transition-colors py-1" data-id="Kontak" data-en="Contact">Kontak</a>
+            </nav>
+
+            <!-- Language Switcher & Action Buttons -->
+            <div class="hidden lg:flex items-center gap-4">
+                
+                <!-- Language Switcher Pill -->
+                <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200/90 shadow-inner">
+                    <button id="btn-lang-id" onclick="setLanguage('id')" class="px-3 py-1 rounded-lg text-xs font-bold transition-all bg-navy-900 text-white shadow-sm flex items-center gap-1.5">
+                        <span>🇮🇩</span> <span>ID</span>
+                    </button>
+                    <button id="btn-lang-en" onclick="setLanguage('en')" class="px-3 py-1 rounded-lg text-xs font-bold transition-all text-slate-600 hover:text-navy-900 flex items-center gap-1.5">
+                        <span>🇬🇧</span> <span>EN</span>
+                    </button>
+                </div>
+
+                <button onclick="window.print()" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-slate-300 bg-white text-navy-900 text-sm font-semibold hover:bg-slate-100 hover:border-slate-400 transition-all shadow-sm">
+                    <i data-lucide="download" class="w-4 h-4 text-gold-600"></i>
+                    <span data-id="Cetak CV" data-en="Print CV">Cetak CV</span>
+                </button>
+                
+                <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg navy-gradient-bg text-white text-sm font-semibold hover:opacity-95 transition-all shadow-gold-glow hover:shadow-md">
+                    <i data-lucide="send" class="w-4 h-4 text-gold-400"></i>
+                    <span data-id="Hubungi Saya" data-en="Contact Me">Hubungi Saya</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu & Language Toggle Button Container -->
+            <div class="flex md:hidden items-center gap-2">
+                <!-- Mobile Language Selector -->
+                <div class="flex items-center bg-slate-100 p-0.5 rounded-lg border border-slate-200">
+                    <button id="btn-lang-id-mob" onclick="setLanguage('id')" class="px-2 py-1 rounded text-xs font-bold bg-navy-900 text-white">ID</button>
+                    <button id="btn-lang-en-mob" onclick="setLanguage('en')" class="px-2 py-1 rounded text-xs font-bold text-slate-600">EN</button>
+                </div>
+
+                <button id="mobile-menu-btn" class="p-2 rounded-lg text-navy-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <i data-lucide="menu" id="menu-icon-open" class="w-6 h-6"></i>
+                    <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-b border-slate-200 px-6 pt-4 pb-6 space-y-4 shadow-xl">
+            <a href="#about" class="mobile-nav-link block py-2 text-base font-medium text-slate-700 hover:text-navy-900" data-id="Tentang Saya" data-en="About Me">Tentang Saya</a>
+            <a href="#experience" class="mobile-nav-link block py-2 text-base font-medium text-slate-700 hover:text-navy-900" data-id="Pengalaman Kerja" data-en="Work Experience">Pengalaman Kerja</a>
+            <a href="#projects" class="mobile-nav-link block py-2 text-base font-medium text-slate-700 hover:text-navy-900" data-id="Proyek Unggulan" data-en="Key Projects">Proyek Unggulan</a>
+            <a href="#skills" class="mobile-nav-link block py-2 text-base font-medium text-slate-700 hover:text-navy-900" data-id="Keahlian Teknis" data-en="Technical Skills">Keahlian Teknis</a>
+            <a href="#education" class="mobile-nav-link block py-2 text-base font-medium text-slate-700 hover:text-navy-900" data-id="Pendidikan & Organisasi" data-en="Education & Leadership">Pendidikan & Organisasi</a>
+            <a href="#contact" class="mobile-nav-link block py-2 text-base font-medium text-slate-700 hover:text-navy-900" data-id="Kontak" data-en="Contact">Kontak</a>
+            <div class="pt-4 border-t border-slate-200 flex flex-col gap-3">
+                <button onclick="window.print()" class="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-slate-300 text-navy-900 font-semibold text-sm">
+                    <i data-lucide="download" class="w-4 h-4 text-gold-600"></i> <span data-id="Cetak Resume CV" data-en="Print Resume CV">Cetak Resume CV</span>
+                </button>
+                <a href="#contact" class="mobile-nav-link w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg navy-gradient-bg text-white font-semibold text-sm">
+                    <i data-lucide="send" class="w-4 h-4 text-gold-400"></i> <span data-id="Hubungi Saya" data-en="Contact Me">Hubungi Saya</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100">
+        <div class="absolute top-20 right-0 -z-10 w-96 h-96 bg-gold-200/40 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 -z-10 w-80 h-80 bg-navy-200/40 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-800 text-xs font-semibold shadow-xs">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span data-id="Staff IoT Digitalization @ PT Parkland World Indonesia 3" data-en="Staff IoT Digitalization @ PT Parkland World Indonesia 3">Staff IoT Digitalization @ PT Parkland World Indonesia 3</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy-900 tracking-tight leading-tight" id="hero-headline">
+                        Transformasi Industri Lewat <span class="gold-gradient-text">IoT & Automasi Smart Factory</span>
+                    </h1>
+
+                    <!-- Tagline & Role -->
+                    <p class="text-lg sm:text-xl font-semibold text-navy-800 flex items-center justify-center lg:justify-start gap-2 flex-wrap">
+                        <span class="px-3 py-1 rounded-md bg-navy-100/70 text-navy-900 text-sm" data-id="IoT Digitalization" data-en="IoT Digitalization">IoT Digitalization</span>
+                        <span class="text-slate-400">•</span>
+                        <span class="px-3 py-1 rounded-md bg-gold-100/80 text-gold-900 text-sm" data-id="Industrial Automation" data-en="Industrial Automation">Industrial Automation</span>
+                        <span class="text-slate-400">•</span>
+                        <span class="px-3 py-1 rounded-md bg-slate-200/80 text-slate-800 text-sm" data-id="QMS Engineer" data-en="QMS Engineer">QMS Engineer</span>
+                    </p>
+
+                    <!-- Summary Bio -->
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0" id="hero-bio">
+                        Lulusan <strong class="text-navy-900 font-semibold">Pendidikan Teknik Elektro UNNES (IPK 3.80/4.00)</strong> yang saat ini bertugas di Dept. Quality Management System PT Parkland World Indonesia 3. Berpengalaman luas dalam pengembangan monitoring IoT (ESP32, DHT22, MLX90614), sistem Andon visual/audio, serta otomatisasi kontrol PLC (Omron, Outseal, Siemens).
+                    </p>
+
+                    <!-- Contact & CTA Buttons -->
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#projects" class="w-full sm:w-auto px-7 py-3.5 rounded-xl navy-gradient-bg text-white font-bold text-base shadow-gold-glow hover:opacity-95 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                            <span data-id="Jelajahi Proyek Saya" data-en="Explore My Projects">Jelajahi Proyek Saya</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-gold-400"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white border border-slate-300 hover:border-navy-800 text-navy-900 font-bold text-base hover:bg-slate-50 transition-all shadow-sm flex items-center justify-center gap-2">
+                            <i data-lucide="mail" class="w-5 h-5 text-gold-600"></i>
+                            <span data-id="Hubungi via Email" data-en="Contact via Email">Hubungi via Email</span>
+                        </a>
+                    </div>
+
+                    <!-- Direct Contact Quick Links -->
+                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-600">
+                        <a href="https://linkedin.com/in/zahrotinm/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-navy-900 transition-colors">
+                            <i data-lucide="linkedin" class="w-4 h-4 text-blue-600"></i>
+                            <span>linkedin.com/in/zahrotinm</span>
+                        </a>
+                        <span class="text-slate-300">|</span>
+                        <a href="tel:+6282324060992" class="flex items-center gap-1.5 hover:text-navy-900 transition-colors">
+                            <i data-lucide="phone" class="w-4 h-4 text-emerald-600"></i>
+                            <span>+62 823-2406-0992</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Portrait & Key Highlights Cards -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-full max-w-[280px] sm:max-w-[320px]">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-navy-900 to-gold-500 rounded-3xl transform rotate-3 scale-105 opacity-20 blur-md"></div>
+                        
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+                            <img src="assets/images/profile.jpg" alt="Zahrotin Munfaria - IoT Digitalization Specialist" class="w-full h-[360px] object-cover object-top">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
+                            
+                            <div class="absolute bottom-3 left-3 right-3 text-white p-3 rounded-xl backdrop-blur-md bg-navy-900/70 border border-white/20">
+                                <p class="text-[10px] uppercase tracking-widest text-gold-400 font-bold" data-id="Pendidikan & Prestasi" data-en="Education & Achievement">Pendidikan & Prestasi</p>
+                                <h3 class="text-base font-bold text-white" data-id="S.Pd. Teknik Elektro UNNES" data-en="B.Ed. Electrical Eng UNNES">S.Pd. Teknik Elektro UNNES</h3>
+                                <p class="text-[11px] text-slate-200" data-id="IPK 3.80 / 4.00 • Top 3 Rank Class SMK" data-en="GPA 3.80 / 4.00 • Top 3 Class Rank SMK">IPK 3.80 / 4.00 • Top 3 Rank Class SMK</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1: IoT & Smart Factory -->
+                        <div class="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-gold-100 text-gold-700">
+                                <i data-lucide="cpu" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium" data-id="Spesialisasi" data-en="Specialization">Spesialisasi</p>
+                                <p class="text-sm font-bold text-navy-900" data-id="IoT & Smart Factory" data-en="IoT & Smart Factory">IoT & Smart Factory</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2: Lean Manufacturing & QMS -->
+                        <div class="absolute -bottom-6 -right-4 sm:-right-6 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
+                            <div class="p-2.5 rounded-xl bg-navy-100 text-navy-900">
+                                <i data-lucide="activity" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium" data-id="Pengalaman" data-en="Experience">Pengalaman</p>
+                                <p class="text-sm font-bold text-navy-900" data-id="System Andon & QMS" data-en="System Andon & QMS">System Andon & QMS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section id="about" class="py-20 bg-white border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-gold-600 tracking-widest uppercase mb-2" data-id="Profil Profesional" data-en="Professional Profile">Profil Profesional</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight" data-id="Tentang Saya" data-en="About Me">Tentang Saya</p>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Detailed Bio -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="text-2xl font-bold text-navy-900" data-id="Integrasi Sistem IoT, Otomasi Industri & Efisiensi Pabrik" data-en="IoT Systems Integration, Industrial Automation & Factory Efficiency">
+                        Integrasi Sistem IoT, Otomasi Industri & Efisiensi Pabrik
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-base sm:text-lg" id="about-bio-1">
+                        Saya adalah seorang <strong class="text-navy-900 font-semibold">Staff IoT Digitalization & Quality Management System</strong> di PT Parkland World Indonesia 3 (PT SEJIN). Berfokus pada pengembangan sistem monitoring IoT real-time, otomatisasi kontrol suhu dan kelembaban, serta pembangunan sistem peringatan Andon visual/audio untuk efisiensi lantai produksi.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed text-base" id="about-bio-2">
+                        Lulusan <strong class="text-navy-900 font-semibold">S1 Pendidikan Teknik Elektro UNNES (IPK 3.80/4.00)</strong> dan alumni <strong>MSIB Batch 7 Kampus Merdeka Kemendikbud</strong>. Menguasai pemrograman PLC (Omron, Outseal, Siemens, CX-Programmer), ESP32, Arduino, sensor industri (DHT22, MLX90614, Proximity, Ultrasonic), serta sertifikasi kompetensi PLC dari PT Panca Manunggal. Terbukti adaptif dengan kepemimpinan aktif sebagai <strong class="text-navy-900 font-semibold">Wakil Ketua Umum Hima Wirausaha FT UNNES</strong>.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-gold-300 transition-colors">
+                            <i data-lucide="wifi" class="w-6 h-6 text-gold-600 mb-2"></i>
+                            <h4 class="font-bold text-navy-900 text-sm mb-1" data-id="IoT & Sensors" data-en="IoT & Sensors">IoT & Sensors</h4>
+                            <p class="text-xs text-slate-500" data-id="Real-time data logging, DHT22, MLX90614 IR & alert deviasi." data-en="Real-time data logging, DHT22, MLX90614 IR & deviation alerts.">Real-time data logging, DHT22, MLX90614 IR & alert deviasi.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-navy-300 transition-colors">
+                            <i data-lucide="cpu" class="w-6 h-6 text-navy-700 mb-2"></i>
+                            <h4 class="font-bold text-navy-900 text-sm mb-1" data-id="PLC & Otomasi" data-en="PLC & Automation">PLC & Otomasi</h4>
+                            <p class="text-xs text-slate-500" data-id="Omron, Outseal, Siemens, FluidSIM Pneumatik & wiring panel." data-en="Omron, Outseal, Siemens, FluidSIM Pneumatics & wiring panels.">Omron, Outseal, Siemens, FluidSIM Pneumatik & wiring panel.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-colors">
+                            <i data-lucide="shield-check" class="w-6 h-6 text-emerald-600 mb-2"></i>
+                            <h4 class="font-bold text-navy-900 text-sm mb-1" data-id="QMS & Safety K3" data-en="QMS & Safety K3">QMS & Safety K3</h4>
+                            <p class="text-xs text-slate-500" data-id="System Andon, lean manufacturing, & standar Keselamatan K3." data-en="Andon system, lean manufacturing, & K3 electrical safety.">System Andon, lean manufacturing, & standar Keselamatan K3.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Metric Cards Grid -->
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="p-6 rounded-2xl navy-gradient-bg text-white shadow-xl flex flex-col justify-between">
+                        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-gold-400 mb-4">
+                            <i data-lucide="award" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-3xl sm:text-4xl font-extrabold text-gold-400 block">3.80</span>
+                            <span class="text-xs text-slate-300 uppercase tracking-wider font-semibold" data-id="IPK / GPA (UNNES)" data-en="GPA (UNNES)">IPK / GPA (UNNES)</span>
+                            <p class="text-xs text-slate-400 mt-1" data-id="Cum Laude S1 Pendidikan Teknik Elektro" data-en="Cum Laude B.Ed Electrical Engineering">Cum Laude S1 Pendidikan Teknik Elektro</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-gold-50 border border-gold-200 text-gold-950 shadow-sm flex flex-col justify-between">
+                        <div class="w-10 h-10 rounded-xl bg-gold-200/70 flex items-center justify-center text-gold-800 mb-4">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-3xl sm:text-4xl font-extrabold text-navy-900 block">9</span>
+                            <span class="text-xs text-gold-900 uppercase tracking-wider font-semibold" data-id="Proyek & Skripsi" data-en="Projects & Thesis">Proyek & Skripsi</span>
+                            <p class="text-xs text-gold-800 mt-1" data-id="IoT Gudang, Andon & PLC Trainer" data-en="Warehouse IoT, Andon & PLC Trainer">IoT Gudang, Andon & PLC Trainer</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-navy-900 shadow-sm flex flex-col justify-between">
+                        <div class="w-10 h-10 rounded-xl bg-slate-200/80 flex items-center justify-center text-navy-700 mb-4">
+                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-3xl sm:text-4xl font-extrabold text-navy-900 block">5</span>
+                            <span class="text-xs text-slate-600 uppercase tracking-wider font-semibold" data-id="Pengalaman Kerja" data-en="Work Experiences">Pengalaman Kerja</span>
+                            <p class="text-xs text-slate-500 mt-1" data-id="Industri, PLN, Pengajaran & Magang" data-en="Industry, PLN, Teaching & Intern">Industri, PLN, Pengajaran & Magang</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950 shadow-sm flex flex-col justify-between">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-200/70 flex items-center justify-center text-emerald-800 mb-4">
+                            <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-3xl sm:text-4xl font-extrabold text-emerald-950 block">Top 3</span>
+                            <span class="text-xs text-emerald-900 uppercase tracking-wider font-semibold" data-id="Rank Kelas SMK" data-en="SMK Class Rank">Rank Kelas SMK</span>
+                            <p class="text-xs text-emerald-800 mt-1" data-id="Nilai Akhir 89.93 / 100" data-en="Final Score 89.93 / 100">Nilai Akhir 89.93 / 100</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WORK EXPERIENCE SECTION ================= -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-gold-600 tracking-widest uppercase mb-2" data-id="Jejak Karir Utama" data-en="Career Path">Jejak Karir Utama</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight" data-id="Pengalaman Kerja & Magang" data-en="Work Experience & Internships">Pengalaman Kerja & Magang</p>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Experience Timeline Container -->
+            <div class="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l-2 border-slate-200 space-y-10">
+                
+                <!-- Experience 1: PT Parkland World Indonesia 3 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full navy-gradient-bg text-gold-400 border-4 border-slate-50 flex items-center justify-center shadow-md">
+                        <i data-lucide="factory" class="w-4 h-4"></i>
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <span class="px-3 py-1 rounded-md bg-gold-100 text-gold-800 text-xs font-bold uppercase tracking-wider" data-id="Pekerjaan Utama (Saat Ini)" data-en="Current Primary Role">Pekerjaan Utama (Saat Ini)</span>
+                                <h3 class="text-xl font-bold text-navy-900 mt-2">Staff IoT Digitalization</h3>
+                                <p class="text-sm font-semibold text-navy-700">PT Parkland World Indonesia 3 (PT SEJIN FASHION INDONESIA)</p>
+                                <p class="text-xs text-slate-500">Dept. Quality Management System — Semarang</p>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-navy-50 text-navy-800 border border-navy-100 self-start sm:self-center">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-gold-600"></i>
+                                <span data-id="Feb 2026 – Sekarang" data-en="Feb 2026 – Present">Feb 2026 – Sekarang</span>
+                            </span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600 list-disc list-inside leading-relaxed" id="exp-1-list">
+                            <li>Mengembangkan sistem monitoring IoT menggunakan sensor DHT22 dan MLX90614 untuk pelacakan kelembaban & suhu real-time di Finished Goods Warehouse, chamber, dan chiller machine dilengkapi peringatan deviasi otomatis.</li>
+                            <li>Membangun sistem pengumpulan data cacat otomatis & Andon Alert System untuk mendeteksi penghentian mesin dan deviasi kualitas produksi.</li>
+                            <li>Merancang sistem anti-fungal spray otomatis berbasis sensor proximity untuk mendukung prinsip lean manufacturing di area produksi pabrik.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2: SMK IPT Karangpanas -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-white border-2 border-gold-500 text-navy-900 flex items-center justify-center shadow-sm">
+                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-navy-900" data-id="Guru Kejuruan (Teknik Elektro)" data-en="Vocational Electronics Teacher">Guru Kejuruan (Teknik Elektro)</h3>
+                                <p class="text-sm font-semibold text-navy-700">SMK IPT Karangpanas</p>
+                                <p class="text-xs text-slate-500">Semarang</p>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 self-start sm:self-center">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-500"></i>
+                                <span data-id="Agt 2024 – Nov 2024" data-en="Aug 2024 – Nov 2024">Agt 2024 – Nov 2024</span>
+                            </span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600 list-disc list-inside leading-relaxed" id="exp-2-list">
+                            <li>Mengajar materi Elektronika Industri untuk program keahlian Teknik Otomasi Industri (teori & sesi praktikum laboratorium).</li>
+                            <li>Menyusun modul ajar dan praktikum rangkaian elektronik industri, komponen kontrol, serta sistem otomasi.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3: ULP PLN Semarang Barat -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 text-slate-700 flex items-center justify-center shadow-sm">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-navy-900" data-id="Magang Administrasi & Transaksi Energi" data-en="Administration & Energy Transactions Intern">Magang Administrasi & Transaksi Energi</h3>
+                                <p class="text-sm font-semibold text-navy-700">ULP PLN Semarang Barat</p>
+                                <p class="text-xs text-slate-500">Semarang</p>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 self-start sm:self-center">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-500"></i>
+                                <span data-id="Jun 2024 – Jul 2024" data-en="Jun 2024 – Jul 2024">Jun 2024 – Jul 2024</span>
+                            </span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600 list-disc list-inside leading-relaxed" id="exp-3-list">
+                            <li>Membantu pelayanan pelanggan, input data sistem AP2T, inspeksi lapangan, serta pemantauan konsumsi pemakaian listrik pelanggan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4: LKP Dimy Motor / DirJen Pendidikan Vokasi -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 text-slate-700 flex items-center justify-center shadow-sm">
+                        <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-navy-900" data-id="Magang Supervisor" data-en="Supervisor Intern">Magang Supervisor</h3>
+                                <p class="text-sm font-semibold text-navy-700">Direktorat Kursus & Pelatihan, DirJen Pendidikan Vokasi Kemendikbud</p>
+                                <p class="text-xs text-slate-500">Demak</p>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 self-start sm:self-center">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-500"></i>
+                                <span data-id="Feb 2024 – Jun 2024" data-en="Feb 2024 – Jun 2024">Feb 2024 – Jun 2024</span>
+                            </span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600 list-disc list-inside leading-relaxed" id="exp-4-list">
+                            <li>Mempelajari sistem dan prinsip kerja pengontrol (controller) sepeda motor listrik dan sepeda listrik sebagai bagian dari penguasaan teknologi kendaraan ramah lingkungan.</li>
+                            <li>Mempelajari dan memahami perencanaan serta penyampaian pembelajaran yang efektif di Lembaga Kursus dan Pelatihan (LKP).</li>
+                            <li>Berperan aktif dalam mengawasi dan mendampingi kegiatan kursus serta pelatihan yang diselenggarakan di LKP.</li>
+                            <li>Mengikuti dan mendampingi kegiatan luar (eksternal) yang diadakan siswa LKP sebagai bagian dari pembelajaran kontekstual.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 5: PT Dua Kelinci -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[39px] top-0 w-8 h-8 rounded-full bg-white border-2 border-slate-300 text-slate-700 flex items-center justify-center shadow-sm">
+                        <i data-lucide="cpu" class="w-4 h-4"></i>
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200/80 hover:shadow-md transition-shadow">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                            <div>
+                                <h3 class="text-xl font-bold text-navy-900" data-id="Magang Teknisi Listrik Industri" data-en="Industrial Electrical Technician Intern">Magang Teknisi Listrik Industri</h3>
+                                <p class="text-sm font-semibold text-navy-700">PT Dua Kelinci</p>
+                                <p class="text-xs text-slate-500">Pati</p>
+                            </div>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-100 text-slate-700 self-start sm:self-center">
+                                <i data-lucide="calendar" class="w-3.5 h-3.5 text-slate-500"></i>
+                                <span data-id="Jan 2021 – Apr 2021" data-en="Jan 2021 – Apr 2021">Jan 2021 – Apr 2021</span>
+                            </span>
+                        </div>
+                        <ul class="mt-4 space-y-2.5 text-sm text-slate-600 list-disc list-inside leading-relaxed" id="exp-5-list">
+                            <li>Merakit kontrol panel berbasis relay dan sistem kontrol PLC untuk otomatisasi mesin produksi.</li>
+                            <li>Melakukan instalasi listrik industri sesuai dengan standar keselamatan kerja (K3).</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS GRID ================= -->
+    <section id="projects" class="py-20 bg-white border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold text-gold-600 tracking-widest uppercase mb-2" data-id="Portofolio Real Lengkap" data-en="Full Real Portfolio">Portofolio Real Lengkap</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight" data-id="Proyek IoT, Otomasi & Skripsi" data-en="IoT, Automation & Thesis Projects">Proyek IoT, Otomasi & Skripsi</p>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Project Filter Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-12" id="project-filters">
+                <button class="filter-btn active px-5 py-2 rounded-xl text-sm font-bold transition-all bg-navy-900 text-white shadow-sm" data-filter="all" data-id="Semua Proyek" data-en="All Projects">Semua Proyek</button>
+                <button class="filter-btn px-5 py-2 rounded-xl text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200" data-filter="iot">IoT & Sensors</button>
+                <button class="filter-btn px-5 py-2 rounded-xl text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200" data-filter="andon">Andon & QMS</button>
+                <button class="filter-btn px-5 py-2 rounded-xl text-sm font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200" data-filter="plc">PLC & Trainer</button>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                
+                <!-- Project 1: Humidity Monitoring -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="iot">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-900">
+                            <img src="assets/images/project_humidity.jpg" alt="Humidity Monitoring IoT" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-900/90 text-gold-400 text-xs font-bold backdrop-blur-md">IoT Gudang</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">Humidity Monitoring – FG Warehouse</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Sistem IoT dengan sensor DHT22 menampilkan data kelembaban gudang secara real-time pada dashboard serta notifikasi alert otomatis ketika melebih batas aman (PT Parkland World Indonesia 3).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 mt-auto">
+                        <button onclick="openProjectModal(1)" class="w-full py-2.5 rounded-lg border border-slate-300 hover:border-navy-900 text-navy-900 text-sm font-semibold hover:bg-navy-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span data-id="Lihat Detail Proyek" data-en="View Project Details">Lihat Detail Proyek</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2: Temperature Monitoring -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="iot">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <div class="p-6 text-center text-white">
+                                <i data-lucide="thermometer" class="w-12 h-12 text-gold-400 mx-auto mb-2"></i>
+                                <p class="text-xs uppercase font-mono tracking-widest text-slate-300">Non-Contact IR Sensing</p>
+                            </div>
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-900/90 text-gold-400 text-xs font-bold backdrop-blur-md">IoT Chiller</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">Temperature Monitoring – Chamber & Chiller</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Pengukuran suhu tanpa kontak (non-contact IR sensor MLX90614) dilengkapi data logging otomatis dan alert deviasi suhu real-time untuk mesin pendingin pabrik.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 mt-auto">
+                        <button onclick="openProjectModal(2)" class="w-full py-2.5 rounded-lg border border-slate-300 hover:border-navy-900 text-navy-900 text-sm font-semibold hover:bg-navy-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span data-id="Lihat Detail Proyek" data-en="View Project Details">Lihat Detail Proyek</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3: Automatic Andon System -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="andon">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-900">
+                            <img src="assets/images/project_andon.jpg" alt="Automatic Andon System" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-900/90 text-gold-400 text-xs font-bold backdrop-blur-md">Smart Factory</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">Automatic Andon Alert System</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Sistem sinyal audio/visual otomatis untuk lantai produksi ketika terjadi penghentian mesin atau deviasi kualitas, mempercepat respon operator dan lean manufacturing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 mt-auto">
+                        <button onclick="openProjectModal(3)" class="w-full py-2.5 rounded-lg border border-slate-300 hover:border-navy-900 text-navy-900 text-sm font-semibold hover:bg-navy-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span data-id="Lihat Detail Proyek" data-en="View Project Details">Lihat Detail Proyek</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4: Top 3 Defect Collection -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="andon">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <div class="p-6 text-center text-white">
+                                <i data-lucide="bar-chart-2" class="w-12 h-12 text-emerald-400 mx-auto mb-2"></i>
+                                <p class="text-xs uppercase font-mono tracking-widest text-slate-300">Digital Quality Tracker</p>
+                            </div>
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-900/90 text-gold-400 text-xs font-bold backdrop-blur-md">Quality Control</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">Top 3 Defect Collection System</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Tracker kualitas digital berbasis sensor proximity untuk menghitung produk cacat sesuai jenisnya dan menampilkan 3 kategori cacat tertinggi tiap shift kerja.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 mt-auto">
+                        <button onclick="openProjectModal(4)" class="w-full py-2.5 rounded-lg border border-slate-300 hover:border-navy-900 text-navy-900 text-sm font-semibold hover:bg-navy-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span data-id="Lihat Detail Proyek" data-en="View Project Details">Lihat Detail Proyek</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5: Auto Spray Anti-Fungal -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="iot">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <div class="p-6 text-center text-white">
+                                <i data-lucide="droplet" class="w-12 h-12 text-blue-400 mx-auto mb-2"></i>
+                                <p class="text-xs uppercase font-mono tracking-widest text-slate-300">Automated Nozzle Relay</p>
+                            </div>
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-900/90 text-gold-400 text-xs font-bold backdrop-blur-md">Otomasi Semprot</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">Auto Spray Anti-Fungal System</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Penyemprotan otomatis cairan anti-jamur pada rak penyimpanan sepatu berbasis trigger sensor proximity dan relay control presisi tanpa intervensi manual.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 mt-auto">
+                        <button onclick="openProjectModal(5)" class="w-full py-2.5 rounded-lg border border-slate-300 hover:border-navy-900 text-navy-900 text-sm font-semibold hover:bg-navy-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span data-id="Lihat Detail Proyek" data-en="View Project Details">Lihat Detail Proyek</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 6: Skripsi Trainer PLC Outseal -->
+                <div class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="plc">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <div class="p-6 text-center text-white">
+                                <i data-lucide="cpu" class="w-12 h-12 text-gold-400 mx-auto mb-2"></i>
+                                <p class="text-xs uppercase font-mono tracking-widest text-slate-300">Skripsi S1 UNNES (2024)</p>
+                            </div>
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-navy-900/90 text-gold-400 text-xs font-bold backdrop-blur-md">Skripsi S1</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy-900 mb-2">Development of PLC Trainer Media</h3>
+                            <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                                Tugas Akhir S1 Pendidikan Teknik Elektro UNNES merancang media modul praktikum PLC Outseal & Pneumatik interaktif untuk mendukung pembelajaran praktikum mahasiswa vokasi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 border-t border-slate-100 mt-auto">
+                        <button onclick="openProjectModal(6)" class="w-full py-2.5 rounded-lg border border-slate-300 hover:border-navy-900 text-navy-900 text-sm font-semibold hover:bg-navy-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span data-id="Lihat Detail Proyek" data-en="View Project Details">Lihat Detail Proyek</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TECHNICAL SKILLS BADGES ================= -->
+    <section id="skills" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-gold-600 tracking-widest uppercase mb-2" data-id="Kemampuan Teknis & Manajerial" data-en="Technical & Managerial Skills">Kemampuan Teknis & Manajerial</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight" data-id="Keahlian & Toolkit Komprehensif" data-en="Comprehensive Skills & Toolkit">Keahlian & Toolkit Komprehensif</p>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Skill Group 1: IoT & Automation -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="p-3 rounded-xl bg-gold-100 text-gold-800">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy-900 text-lg" data-id="IoT & Sensor Integration" data-en="IoT & Sensor Integration">IoT & Sensor Integration</h3>
+                            <p class="text-xs text-slate-500" data-id="Hardware & Telemetri Real-time" data-en="Hardware & Real-time Telemetry">Hardware & Telemetri Real-time</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-gold-50 text-gold-900 font-semibold text-xs border border-gold-200">ESP32 & Arduino Uno</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">DHT22 Humidity Sensor</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">MLX90614 IR Temp</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">Proximity Sensors</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">Ultrasonic HC-SR04</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-gold-100 text-gold-950 font-semibold text-xs">Andon Alert Systems</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">HMI Interface</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">IoT Dashboard</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 2: PLC & Software Tools -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="p-3 rounded-xl bg-navy-100 text-navy-900">
+                            <i data-lucide="terminal" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy-900 text-lg" data-id="PLC & Software Teknik" data-en="PLC & Technical Software">PLC & Software Teknik</h3>
+                            <p class="text-xs text-slate-500" data-id="Pengontrol & Simulasi Rangkaian" data-en="Controllers & Circuit Simulation">Pengontrol & Simulasi Rangkaian</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-navy-50 text-navy-900 font-semibold text-xs border border-navy-100">PLC CX-Programmer (Omron)</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-navy-50 text-navy-900 font-semibold text-xs border border-navy-100">PLC Outseal</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-navy-50 text-navy-900 font-semibold text-xs border border-navy-100">PLC Siemens</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">Proteus Simulation</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">FluidSIM Pneumatik</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">EKTS</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">ATS (Auto Transfer Switch)</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">Python & VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 3: Operations & QMS -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="p-3 rounded-xl bg-blue-100 text-blue-900">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy-900 text-lg" data-id="Operasional & QMS" data-en="Operations & QMS">Operasional & QMS</h3>
+                            <p class="text-xs text-slate-500" data-id="Kualitas, Stok & Sistem AP2T" data-en="Quality, Inventory & AP2T System">Kualitas, Stok & Sistem AP2T</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-navy-50 text-navy-900 font-semibold text-xs border border-navy-100">Quality Management System (QMS)</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">Lean Manufacturing</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">FIFO Inventory Control</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-gold-50 text-gold-900 font-semibold text-xs border border-gold-200">Sistem AP2T PLN</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs">MS Office (Word, Excel, PPT)</span>
+                    </div>
+                </div>
+
+                <!-- Skill Group 4: Certification, K3 & Softskills -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition-shadow lg:col-span-3">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="p-3 rounded-xl bg-emerald-100 text-emerald-900">
+                            <i data-lucide="badge-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy-900 text-lg" data-id="Sertifikasi, Standar K3 & Soft Skills" data-en="Certification, K3 Safety & Soft Skills">Sertifikasi, Standar K3 & Soft Skills</h3>
+                            <p class="text-xs text-slate-500" data-id="Legalitas Kompetensi & Interpersonal" data-en="Competency & Interpersonal Skills">Legalitas Kompetensi & Interpersonal</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-xs font-bold text-gold-600 uppercase" data-id="Sertifikat Resmi" data-en="Official Certificate">Sertifikat Resmi</span>
+                            <h4 class="font-bold text-navy-900 text-sm mt-0.5" data-id="Sertifikat Pemrograman PLC" data-en="PLC Programming Certificate">Sertifikat Pemrograman PLC</h4>
+                            <p class="text-xs text-slate-500">PT Panca Manunggal (2021)</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-xs font-bold text-navy-600 uppercase" data-id="Kelistrikan & K3" data-en="Electrical & K3 Safety">Kelistrikan & K3</span>
+                            <h4 class="font-bold text-navy-900 text-sm mt-0.5" data-id="Wiring Panel & K3 Industri" data-en="Wiring Panel & Industrial K3">Wiring Panel & K3 Industri</h4>
+                            <p class="text-xs text-slate-500" data-id="Standar Keselamatan Kerja Listrik" data-en="Electrical Safety Standards">Standar Keselamatan Kerja Listrik</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="text-xs font-bold text-emerald-600 uppercase" data-id="Soft Skills & Bahasa" data-en="Soft Skills & Languages">Soft Skills & Bahasa</span>
+                            <p class="text-xs text-navy-900 font-semibold mt-1" data-id="Public Speaking • Kepemimpinan • Problem Solving" data-en="Public Speaking • Leadership • Problem Solving">Public Speaking • Kepemimpinan • Problem Solving</p>
+                            <p class="text-xs text-slate-500 mt-0.5" data-id="Bahasa Indonesia (Native) & Inggris (Kompeten)" data-en="Indonesian (Native) & English (Competent)">Bahasa Indonesia (Native) & Inggris (Kompeten)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= EDUCATION & ORGANIZATIONAL ================= -->
+    <section id="education" class="py-20 bg-white border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Left Column: Education -->
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-xl navy-gradient-bg flex items-center justify-center text-gold-400">
+                            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-navy-900" data-id="Riwayat Pendidikan" data-en="Educational Background">Riwayat Pendidikan</h2>
+                            <p class="text-xs text-slate-500" data-id="Latar Belakang Akademis Formal" data-en="Formal Academic Degree">Latar Belakang Akademis Formal</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- UNNES -->
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <span class="px-2.5 py-0.5 rounded bg-gold-100 text-gold-900 text-xs font-bold" data-id="S1 Sarjana Pendidikan" data-en="Bachelor Degree (B.Ed)">S1 Sarjana Pendidikan</span>
+                                    <h3 class="text-lg font-bold text-navy-900 mt-1" data-id="Pendidikan Teknik Elektro" data-en="Electrical Engineering Education">Pendidikan Teknik Elektro</h3>
+                                    <p class="text-sm font-semibold text-slate-700">Universitas Negeri Semarang (UNNES)</p>
+                                </div>
+                                <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-navy-900 text-gold-400">IPK: 3.80 / 4.00</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-3">Semarang | Agt 2021 – Mei 2025</p>
+                            <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside" id="edu-unnes-list">
+                                <li>Lolos seleksi nasional SBMPTN & diterima di UNNES.</li>
+                                <li>Peserta Magang Bersertifikat MSIB Batch 7 Kampus Merdeka Kemendikbud.</li>
+                                <li>Spesialisasi: Pemrograman PLC (CX Programmer, Outseal, Omron, Siemens), ESP32/Arduino, Proteus, ATS, FluidSIM, wiring panel kelistrikan.</li>
+                                <li><strong>Skripsi:</strong> <em>Pengembangan Trainer PLC Outseal dan Pneumatik untuk Media Pembelajaran di Perguruan Tinggi.</em></li>
+                            </ul>
+                        </div>
+
+                        <!-- SMK Tunas Harapan Pati -->
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <span class="px-2.5 py-0.5 rounded bg-slate-200 text-slate-800 text-xs font-bold" data-id="Sekolah Menengah Kejuruan" data-en="Vocational High School">Sekolah Menengah Kejuruan</span>
+                                    <h3 class="text-lg font-bold text-navy-900 mt-1" data-id="Teknik Otomasi Industri" data-en="Industrial Automation Engineering">Teknik Otomasi Industri</h3>
+                                    <p class="text-sm font-semibold text-slate-700">SMK Tunas Harapan Pati</p>
+                                </div>
+                                <span class="text-xs font-mono font-bold px-2.5 py-1 rounded bg-emerald-100 text-emerald-800" data-id="Nilai: 89.93 / 100" data-en="Score: 89.93 / 100">Nilai: 89.93 / 100</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-3">Pati | Jul 2017 – Mei 2021</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside" id="edu-smk-list">
+                                <li>🏆 Peringkat Top 3 Terbaik dalam kelas.</li>
+                                <li>Mendapatkan Sertifikat Kompetensi Keahlian PLC dari PT Panca Manunggal.</li>
+                                <li>Mata Pelajaran: Sistem Kontrol Terprogram, Sensor & Aktuator, Pneumatik, Sistem Kontrol Elektromekanik, Instalasi Penerangan Listrik.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Organizational Experience -->
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-xl bg-gold-100 text-gold-800 flex items-center justify-center">
+                            <i data-lucide="users" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-navy-900" data-id="Pengalaman Organisasi" data-en="Organizational Experience">Pengalaman Organisasi</h2>
+                            <p class="text-xs text-slate-500" data-id="Kepemimpinan & Manajerial" data-en="Leadership & Management">Kepemimpinan & Manajerial</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Org 1: Hima Wirausaha -->
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navy-900" data-id="Wakil Ketua Umum" data-en="Vice Chairman">Wakil Ketua Umum</h3>
+                                    <p class="text-sm font-semibold text-navy-700">Himpunan Mahasiswa Wirausaha FT UNNES</p>
+                                </div>
+                                <span class="text-xs font-mono text-slate-500">Jan 2023 – Jan 2024</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-3">Semarang</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside leading-relaxed" id="org-1-list">
+                                <li>Mendampingi ketua umum dalam kepemimpinan dan representasi resmi organisasi.</li>
+                                <li>Mengawasi kinerja divisi dan memastikan program kewirausahaan berjalan efektif.</li>
+                                <li>Mewakili ketua dalam kegiatan resmi serta memfasilitasi pengembangan potensi anggota.</li>
+                                <li>Menjaga koordinasi dan sinergi antar divisi.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Org 2: Hipro Teknik Elektro -->
+                        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                            <div class="flex justify-between items-start mb-2">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navy-900" data-id="Staff Ahli ART & Kewirausahaan" data-en="Household Budget & Entrepreneurship Staff">Staff Ahli ART & Kewirausahaan</h3>
+                                    <p class="text-sm font-semibold text-navy-700">Himpunan Profesi Mahasiswa Teknik Elektro FT UNNES</p>
+                                </div>
+                                <span class="text-xs font-mono text-slate-500">Jan 2021 – Jan 2024</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mb-3">Semarang</p>
+                            <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside leading-relaxed" id="org-2-list">
+                                <li>Mengelola operasional bisnis dan unit usaha organisasi.</li>
+                                <li>Menangani produksi pakaian angkatan (PDH) dan jas lab mahasiswa baru.</li>
+                                <li>Bertanggung jawab atas inventarisasi, pengadaan alat, dan program PKM.</li>
+                                <li>Mendukung penyusunan dan evaluasi peraturan organisasi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-gold-600 tracking-widest uppercase mb-2" data-id="Hubungi Saya" data-en="Contact Me">Hubungi Saya</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-navy-900 tracking-tight" data-id="Mari Berdiskusi & Berkolaborasi" data-en="Let's Discuss & Collaborate">Mari Berdiskusi & Berkolaborasi</p>
+                <p class="text-slate-600 text-sm mt-3" data-id="Apakah Anda memerlukan spesialis IoT, otomasi PLC, atau QMS Engineer?" data-en="Looking for an IoT Specialist, PLC Automation, or QMS Engineer?">Apakah Anda memerlukan spesialis IoT, otomasi PLC, atau QMS Engineer?</p>
+                <div class="w-16 h-1 bg-gold-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left: Contact Details Cards -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Direct Email Card -->
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="p-3 rounded-xl bg-navy-100 text-navy-900">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase">Email</span>
+                            <a href="mailto:zahrotinmunfaria@gmail.com" class="text-base font-bold text-navy-900 block hover:text-gold-600 transition-colors">
+                                zahrotinmunfaria@gmail.com
+                            </a>
+                            <p class="text-xs text-slate-500 mt-0.5" data-id="Kirimkan pesan langsung melalui email." data-en="Send a direct email message.">Kirimkan pesan langsung melalui email.</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct Phone / WhatsApp Card -->
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="p-3 rounded-xl bg-emerald-100 text-emerald-900">
+                            <i data-lucide="phone-call" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase" data-id="Nomor Telepon / WA" data-en="Phone / WhatsApp">Nomor Telepon / WA</span>
+                            <a href="https://wa.me/6282324060992" target="_blank" class="text-base font-bold text-navy-900 block hover:text-emerald-600 transition-colors">
+                                +62 823-2406-0992
+                            </a>
+                            <p class="text-xs text-slate-500 mt-0.5" data-id="Tersedia untuk percakapan profesional & WA." data-en="Available for professional calls & WhatsApp.">Tersedia untuk percakapan profesional & WA.</p>
+                        </div>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="p-3 rounded-xl bg-amber-100 text-amber-900">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase" data-id="Domisili" data-en="Location">Domisili</span>
+                            <p class="text-base font-bold text-navy-900">Semarang, Jawa Tengah, Indonesia</p>
+                            <p class="text-xs text-slate-500 mt-0.5" data-id="Siap bekerja secara On-site maupun Remote." data-en="Available for On-site & Remote work.">Siap bekerja secara On-site maupun Remote.</p>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
+                        <div class="p-3 rounded-xl bg-blue-100 text-blue-900">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-slate-400 uppercase">LinkedIn</span>
+                            <a href="https://linkedin.com/in/zahrotinm/" target="_blank" rel="noopener noreferrer" class="text-base font-bold text-navy-900 block hover:text-blue-600 transition-colors">
+                                linkedin.com/in/zahrotinm/
+                            </a>
+                            <p class="text-xs text-slate-500 mt-0.5" data-id="Terhubung di jejaring profesional." data-en="Connect on LinkedIn network.">Terhubung di jejaring profesional.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right: Interactive Contact Form -->
+                <div class="lg:col-span-7 bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <h3 class="text-xl font-bold text-navy-900 mb-2" data-id="Kirim Pesan Langsung" data-en="Send Direct Message">Kirim Pesan Langsung</h3>
+                    <p class="text-xs text-slate-500 mb-6" data-id="Isi formulir di bawah ini dan saya akan membalas pesan Anda secepatnya." data-en="Fill out the form below and I will get back to you shortly.">Isi formulir di bawah ini dan saya akan membalas pesan Anda secepatnya.</p>
+
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="form-name" class="block text-xs font-bold text-navy-900 uppercase mb-1" data-id="Nama Lengkap *" data-en="Full Name *">Nama Lengkap *</label>
+                                <input type="text" id="form-name" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 text-sm outline-none transition-all">
+                            </div>
+                            <div>
+                                <label for="form-email" class="block text-xs font-bold text-navy-900 uppercase mb-1" data-id="Email Anda *" data-en="Your Email *">Email Anda *</label>
+                                <input type="email" id="form-email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 text-sm outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="form-subject" class="block text-xs font-bold text-navy-900 uppercase mb-1" data-id="Subjek Pesan *" data-en="Message Subject *">Subjek Pesan *</label>
+                            <input type="text" id="form-subject" required placeholder="Tawaran Pekerjaan IoT / Otomasi / QMS Engineer" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 text-sm outline-none transition-all">
+                        </div>
+
+                        <div>
+                            <label for="form-message" class="block text-xs font-bold text-navy-900 uppercase mb-1" data-id="Pesan Detail *" data-en="Message Details *">Pesan Detail *</label>
+                            <textarea id="form-message" rows="5" required placeholder="Tuliskan kebutuhan atau pertanyaan Anda di sini..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-navy-900 focus:ring-2 focus:ring-navy-900/20 text-sm outline-none transition-all resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" id="form-submit-btn" class="w-full py-3.5 rounded-xl navy-gradient-bg text-white font-bold text-sm shadow-gold-glow hover:opacity-95 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-4 h-4 text-gold-400"></i>
+                            <span data-id="Kirimkan Pesan Saya" data-en="Send Message">Kirimkan Pesan Saya</span>
+                        </button>
+                    </form>
+
+                    <!-- Success Toast Alert -->
+                    <div id="form-success-toast" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0"></i>
+                        <div>
+                            <p class="font-bold" data-id="Pesan Berhasil Terkirim!" data-en="Message Sent Successfully!">Pesan Berhasil Terkirim!</p>
+                            <p class="text-xs text-emerald-800" data-id="Terima kasih telah menghubungi Zahrotin Munfaria. Respon akan dikirimkan via email." data-en="Thank you for reaching out to Zahrotin Munfaria. A response will be sent via email.">Terima kasih telah menghubungi Zahrotin Munfaria. Respon akan dikirimkan via email.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="navy-gradient-bg text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-gold-400 font-extrabold text-xl">
+                        ZM
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white leading-tight">Zahrotin Munfaria</h4>
+                        <p class="text-xs text-slate-400">IoT Digitalization Specialist & Industrial Automation Engineer</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-6 text-sm text-slate-400">
+                    <a href="#about" class="hover:text-gold-400 transition-colors" data-id="Tentang" data-en="About">Tentang</a>
+                    <a href="#experience" class="hover:text-gold-400 transition-colors" data-id="Pengalaman" data-en="Experience">Pengalaman</a>
+                    <a href="#projects" class="hover:text-gold-400 transition-colors" data-id="Proyek" data-en="Projects">Proyek</a>
+                    <a href="#skills" class="hover:text-gold-400 transition-colors" data-id="Keahlian" data-en="Skills">Keahlian</a>
+                    <a href="#contact" class="hover:text-gold-400 transition-colors" data-id="Kontak" data-en="Contact">Kontak</a>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>&copy; 2026 Zahrotin Munfaria. All rights reserved.</p>
+                <p class="flex items-center gap-1">
+                    <span data-id="Designed for Excellence & Industrial IoT" data-en="Designed for Excellence & Industrial IoT">Designed for Excellence & Industrial IoT</span>
+                    <i data-lucide="heart" class="w-3.5 h-3.5 text-gold-400 inline"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= PROJECT DETAIL POPUP MODAL ================= -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-sm transition-opacity">
+        <div class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl border border-slate-200 transform transition-all" onclick="event.stopPropagation()">
+            <div class="p-6 navy-gradient-bg text-white flex items-center justify-between">
+                <div>
+                    <span id="modal-badge" class="px-2.5 py-0.5 rounded bg-gold-500/20 text-gold-400 text-xs font-mono font-bold">Kategori</span>
+                    <h3 id="modal-title" class="text-xl font-bold text-white mt-1">Judul Proyek</h3>
+                </div>
+                <button onclick="closeProjectModal()" class="p-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+            
+            <div class="p-6 sm:p-8 space-y-4 max-h-[70vh] overflow-y-auto">
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider" data-id="Deskripsi & Perincian Arsitektur" data-en="Description & Architecture Details">Deskripsi & Perincian Arsitektur</h4>
+                <p id="modal-description" class="text-slate-600 text-sm leading-relaxed">Detail penjelasan proyek...</p>
+                
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider pt-2" data-id="Komponen & Teknologi Digunakan" data-en="Components & Technologies Used">Komponen & Teknologi Digunakan</h4>
+                <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 mt-4">
+                    <h5 class="text-xs font-bold text-navy-900 uppercase mb-1" data-id="Hasil & Dampak Operasional:" data-en="Results & Operational Impact:">Hasil & Dampak Operasional:</h5>
+                    <p id="modal-impact" class="text-xs text-slate-600 leading-relaxed">Dampak pada efisiensi pabrik...</p>
+                </div>
+            </div>
+
+            <div class="p-4 bg-slate-100 border-t border-slate-200 text-right">
+                <button onclick="closeProjectModal()" class="px-5 py-2 rounded-xl bg-navy-900 text-white text-sm font-semibold hover:bg-navy-800 transition-colors" data-id="Tutup Detail" data-en="Close Details">
+                    Tutup Detail
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= JAVASCRIPT LOGIC & BILINGUAL TRANSLATION ================= -->
+    <script>
+        lucide.createIcons();
+
+        // Language Switcher Logic
+        let currentLang = localStorage.getItem('preferred_lang') || 'id';
+
+        const translations = {
+            id: {
+                headline: `Transformasi Industri Lewat <span class="gold-gradient-text">IoT & Automasi Smart Factory</span>`,
+                bio: `Lulusan <strong class="text-navy-900 font-semibold">Pendidikan Teknik Elektro UNNES (IPK 3.80/4.00)</strong> yang saat ini bertugas di Dept. Quality Management System PT Parkland World Indonesia 3. Berpengalaman luas dalam pengembangan monitoring IoT (ESP32, DHT22, MLX90614), sistem Andon visual/audio, serta otomatisasi kontrol PLC (Omron, Outseal, Siemens).`,
+                aboutBio1: `Saya adalah seorang <strong class="text-navy-900 font-semibold">Staff IoT Digitalization & Quality Management System</strong> di PT Parkland World Indonesia 3 (PT SEJIN). Berfokus pada pengembangan sistem monitoring IoT real-time, otomatisasi kontrol suhu dan kelembaban, serta pembangunan sistem peringatan Andon visual/audio untuk efisiensi lantai produksi.`,
+                aboutBio2: `Lulusan <strong class="text-navy-900 font-semibold">S1 Pendidikan Teknik Elektro UNNES (IPK 3.80/4.00)</strong> dan alumni <strong>MSIB Batch 7 Kampus Merdeka Kemendikbud</strong>. Menguasai pemrograman PLC (Omron, Outseal, Siemens, CX-Programmer), ESP32, Arduino, sensor industri (DHT22, MLX90614, Proximity, Ultrasonic), serta sertifikasi kompetensi PLC dari PT Panca Manunggal. Terbukti adaptif dengan kepemimpinan aktif sebagai <strong class="text-navy-900 font-semibold">Wakil Ketua Umum Hima Wirausaha FT UNNES</strong>.`,
+                exp1List: [
+                    "Mengembangkan sistem monitoring IoT menggunakan sensor DHT22 dan MLX90614 untuk pelacakan kelembaban & suhu real-time di Finished Goods Warehouse, chamber, dan chiller machine dilengkapi peringatan deviasi otomatis.",
+                    "Membangun sistem pengumpulan data cacat otomatis & Andon Alert System untuk mendeteksi penghentian mesin dan deviasi kualitas produksi.",
+                    "Merancang sistem anti-fungal spray otomatis berbasis sensor proximity untuk mendukung prinsip lean manufacturing di area produksi pabrik."
+                ],
+                exp2List: [
+                    "Mengajar materi Elektronika Industri untuk program keahlian Teknik Otomasi Industri (teori & sesi praktikum laboratorium).",
+                    "Menyusun modul ajar dan praktikum rangkaian elektronik industri, komponen kontrol, serta sistem otomasi."
+                ],
+                exp3List: [
+                    "Membantu pelayanan pelanggan, input data sistem AP2T, inspeksi lapangan, serta pemantauan konsumsi pemakaian listrik pelanggan."
+                ],
+                exp4List: [
+                    "Mempelajari sistem dan prinsip kerja pengontrol (controller) sepeda motor listrik dan sepeda listrik sebagai bagian dari penguasaan teknologi kendaraan ramah lingkungan.",
+                    "Mempelajari dan memahami perencanaan serta penyampaian pembelajaran yang efektif di Lembaga Kursus dan Pelatihan (LKP).",
+                    "Berperan aktif dalam mengawasi dan mendampingi kegiatan kursus serta pelatihan yang diselenggarakan di LKP.",
+                    "Mengikuti dan mendampingi kegiatan luar (eksternal) yang diadakan siswa LKP sebagai bagian dari pembelajaran kontekstual."
+                ],
+                exp5List: [
+                    "Merakit kontrol panel berbasis relay dan sistem kontrol PLC untuk otomatisasi mesin produksi.",
+                    "Melakukan instalasi listrik industri sesuai dengan standar keselamatan kerja (K3)."
+                ],
+                eduUnnesList: [
+                    "Lolos seleksi nasional SBMPTN & diterima di UNNES.",
+                    "Peserta Magang Bersertifikat MSIB Batch 7 Kampus Merdeka Kemendikbud.",
+                    "Spesialisasi: Pemrograman PLC (CX Programmer, Outseal, Omron, Siemens), ESP32/Arduino, Proteus, ATS, FluidSIM, wiring panel kelistrikan.",
+                    "<strong>Skripsi:</strong> <em>Pengembangan Trainer PLC Outseal dan Pneumatik untuk Media Pembelajaran di Perguruan Tinggi.</em>"
+                ],
+                eduSmkList: [
+                    "🏆 Peringkat Top 3 Terbaik dalam kelas.",
+                    "Mendapatkan Sertifikat Kompetensi Keahlian PLC dari PT Panca Manunggal.",
+                    "Mata Pelajaran: Sistem Kontrol Terprogram, Sensor & Aktuator, Pneumatik, Sistem Kontrol Elektromekanik, Instalasi Penerangan Listrik."
+                ],
+                org1List: [
+                    "Mendampingi ketua umum dalam kepemimpinan dan representasi resmi organisasi.",
+                    "Mengawasi kinerja divisi dan memastikan program kewirausahaan berjalan efektif.",
+                    "Mewakili ketua dalam kegiatan resmi serta memfasilitasi pengembangan potensi anggota.",
+                    "Menjaga koordinasi dan sinergi antar divisi."
+                ],
+                org2List: [
+                    "Mengelola operasional bisnis dan unit usaha organisasi.",
+                    "Menangani produksi pakaian angkatan (PDH) dan jas lab mahasiswa baru.",
+                    "Bertanggung jawab atas inventarisasi, pengadaan alat, dan program PKM.",
+                    "Mendukung penyusunan dan evaluasi peraturan organisasi."
+                ]
+            },
+            en: {
+                headline: `Smart Manufacturing via <span class="gold-gradient-text">IoT & Smart Factory Automation</span>`,
+                bio: `<strong class="text-navy-900 font-semibold">Electrical Engineering Education graduate from UNNES (GPA 3.80/4.00)</strong> currently serving in the Quality Management System Dept at PT Parkland World Indonesia 3. Extensive experience in IoT monitoring development (ESP32, DHT22, MLX90614), visual/audio Andon systems, and PLC control automation (Omron, Outseal, Siemens).`,
+                aboutBio1: `I am an <strong class="text-navy-900 font-semibold">IoT Digitalization & Quality Management System Staff</strong> at PT Parkland World Indonesia 3 (PT SEJIN). Focusing on real-time IoT monitoring development, temperature and humidity automation control, and audio/visual Andon alert system implementation for shop-floor efficiency.`,
+                aboutBio2: `Graduate in <strong class="text-navy-900 font-semibold">B.Ed Electrical Engineering UNNES (GPA 3.80/4.00)</strong> and alumnus of <strong>MSIB Batch 7 Certified Internship by Ministry of Education</strong>. Proficient in PLC programming (Omron, Outseal, Siemens, CX-Programmer), ESP32, Arduino, industrial sensors (DHT22, MLX90614, Proximity, Ultrasonic), and PLC certification from PT Panca Manunggal. Former <strong class="text-navy-900 font-semibold">Vice Chairman of FT UNNES Entrepreneurship Student Union</strong>.`,
+                exp1List: [
+                    "Developed IoT monitoring systems using DHT22 & MLX90614 sensors for real-time humidity & temperature tracking across Finished Goods Warehouse, chamber, and chiller machines with automated deviation alerts.",
+                    "Built an automated defect data collection & Andon alert system to detect production stoppages and quality deviations.",
+                    "Designed a proximity sensor-triggered automated anti-fungal spray system supporting lean manufacturing on the factory floor."
+                ],
+                exp2List: [
+                    "Taught Industrial Electronics for the Industrial Automation Engineering vocational program (theory & laboratory practical sessions).",
+                    "Designed lesson plans and practical exercises on industrial electronic components, circuits, and control systems."
+                ],
+                exp3List: [
+                    "Assisted customer administration, AP2T system data input, field inspections, and electricity usage monitoring."
+                ],
+                exp4List: [
+                    "Studied the systems and working principles of electric motorcycle and electric bicycle controllers as part of mastering eco-friendly vehicle technology.",
+                    "Reviewed and gained understanding of effective learning planning and delivery at Course and Training Institutions (LKP).",
+                    "Actively participated in supervising course and training activities held at the LKP.",
+                    "Followed and accompanied external activities organized by LKP students as part of contextual learning."
+                ],
+                exp5List: [
+                    "Assembled relay-based and PLC control systems for industrial automation.",
+                    "Performed basic industrial electrical installation compliant with K3 safety standards."
+                ],
+                eduUnnesList: [
+                    "Passed national SBMPTN selection & admitted to UNNES.",
+                    "Participant of MSIB Batch 7 Certified Internship by Ministry of Education.",
+                    "Specialization: PLC programming (CX Programmer, Outseal, Omron, Siemens), ESP32/Arduino, Proteus, ATS, FluidSIM, electrical wiring panel assembly.",
+                    "<strong>Thesis:</strong> <em>Development of Outseal PLC and Pneumatic Trainer Media for Higher Education Vocational Learning.</em>"
+                ],
+                eduSmkList: [
+                    "🏆 Top 3 Class Rank in class graduation.",
+                    "Earned PLC Competency Certificate from PT Panca Manunggal.",
+                    "Coursework: Programmed Control Systems, Sensors & Actuators, Pneumatics, Electromechanical Control, Electrical Lighting Installation."
+                ],
+                org1List: [
+                    "Supported the chairman in organizational leadership and official representation.",
+                    "Supervised division performance ensuring entrepreneurship programs executed effectively.",
+                    "Represented the chairman at official events and facilitated member skill development.",
+                    "Maintained cross-divisional coordination and synergy."
+                ],
+                org2List: [
+                    "Managed business operations and student organizational ventures.",
+                    "Handled production of student apparel (PDH) and lab coats for new students.",
+                    "Responsible for equipment inventory procurement and Student Creativity Program (PKM).",
+                    "Supported drafting and evaluation of organizational bylaws."
+                ]
+            }
+        };
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('preferred_lang', lang);
+
+            const btnId = document.getElementById('btn-lang-id');
+            const btnEn = document.getElementById('btn-lang-en');
+            const btnIdMob = document.getElementById('btn-lang-id-mob');
+            const btnEnMob = document.getElementById('btn-lang-en-mob');
+
+            if (lang === 'en') {
+                btnId.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all text-slate-600 hover:text-navy-900";
+                btnEn.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all bg-navy-900 text-white shadow-sm flex items-center gap-1.5";
+                if(btnIdMob) btnIdMob.className = "px-2 py-1 rounded text-xs font-bold text-slate-600";
+                if(btnEnMob) btnEnMob.className = "px-2 py-1 rounded text-xs font-bold bg-navy-900 text-white";
+            } else {
+                btnId.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all bg-navy-900 text-white shadow-sm flex items-center gap-1.5";
+                btnEn.className = "px-3 py-1 rounded-lg text-xs font-bold transition-all text-slate-600 hover:text-navy-900";
+                if(btnIdMob) btnIdMob.className = "px-2 py-1 rounded text-xs font-bold bg-navy-900 text-white";
+                if(btnEnMob) btnEnMob.className = "px-2 py-1 rounded text-xs font-bold text-slate-600";
+            }
+
+            document.querySelectorAll('[data-id]').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.innerHTML = text;
+            });
+
+            const t = translations[lang];
+            if (t) {
+                document.getElementById('hero-headline').innerHTML = t.headline;
+                document.getElementById('hero-bio').innerHTML = t.bio;
+                document.getElementById('about-bio-1').innerHTML = t.aboutBio1;
+                document.getElementById('about-bio-2').innerHTML = t.aboutBio2;
+
+                updateList('exp-1-list', t.exp1List);
+                updateList('exp-2-list', t.exp2List);
+                updateList('exp-3-list', t.exp3List);
+                updateList('exp-4-list', t.exp4List);
+                updateList('exp-5-list', t.exp5List);
+
+                updateList('edu-unnes-list', t.eduUnnesList);
+                updateList('edu-smk-list', t.eduSmkList);
+                updateList('org-1-list', t.org1List);
+                updateList('org-2-list', t.org2List);
+            }
+        }
+
+        function updateList(elementId, itemsArray) {
+            const listEl = document.getElementById(elementId);
+            if (!listEl || !itemsArray) return;
+            listEl.innerHTML = '';
+            itemsArray.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = item;
+                listEl.appendChild(li);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage(currentLang);
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIconOpen.classList.add('hidden');
+                menuIconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            }
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+
+        // Project Filter Functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active', 'bg-navy-900', 'text-white');
+                    b.classList.add('bg-slate-100', 'text-slate-700');
+                });
+                btn.classList.add('active', 'bg-navy-900', 'text-white');
+                btn.classList.remove('bg-slate-100', 'text-slate-700');
+
+                const filter = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Detailed Data for Projects Modal
+        const projectsData = {
+            1: {
+                title: { id: "Humidity Monitoring – Finished Goods Warehouse", en: "Humidity Monitoring – Finished Goods Warehouse" },
+                category: { id: "IoT Gudang & Sensor", en: "Warehouse IoT & Sensors" },
+                description: {
+                    id: "Proyek IoT ini memantau kelembaban udara secara real-time di Finished Goods Warehouse PT Parkland World Indonesia 3 menggunakan sensor DHT22 terhubung mikrokontroler ESP32 dengan dashboard telemetri dan alert peringatan otomatis.",
+                    en: "This IoT project monitors air humidity in real-time at PT Parkland World Indonesia 3 Finished Goods Warehouse using DHT22 sensors connected to an ESP32 microcontroller with a telemetry dashboard and automated alerts."
+                },
+                tech: ["ESP32", "DHT22 Sensor", "Real-time IoT Dashboard", "Automated Alerts"],
+                impact: {
+                    id: "Mencegah pertumbuhan jamur pada stok produk sepatu dan mengeliminasi proses pencatatan manual suhu & kelembaban gudang.",
+                    en: "Prevents mold growth on footwear stock and eliminates manual warehouse humidity logging."
+                }
+            },
+            2: {
+                title: { id: "Temperature Monitoring – Chamber & Chiller", en: "Temperature Monitoring – Chamber & Chiller" },
+                category: { id: "IoT Sensor Pendingin", en: "Cooling Sensor IoT" },
+                description: {
+                    id: "Sistem pemantauan suhu tanpa kontak berbasis sensor MLX90614 Infrared pada chamber dan chiller mesin pendingin pabrik untuk pencatatan log otomatis dan alarm deviasi suhu.",
+                    en: "Non-contact temperature monitoring system using MLX90614 Infrared sensors on factory chamber & chiller machines for automated data logging and real-time deviation alarms."
+                },
+                tech: ["MLX90614 IR Temp", "Arduino / ESP32", "Data Logging EEPROM", "Deviation Alert"],
+                impact: {
+                    id: "Menjaga stabilitas operasional mesin chiller serta pencegahan overheat mesin.",
+                    en: "Maintains operational stability of chiller machines and prevents overheating failures."
+                }
+            },
+            3: {
+                title: { id: "Automatic Andon System Floor Production", en: "Automatic Andon System Floor Production" },
+                category: { id: "Smart Factory & Lean Manufacturing", en: "Smart Factory & Lean Manufacturing" },
+                description: {
+                    id: "Pengembangan sistem Andon visual & audio untuk lantai produksi manufaktur. Ketika terjadi penghentian mesin atau deviasi kualitas, sistem mengaktifkan tower lamp & sirine sesuai urgensi.",
+                    en: "Development of visual & audio Andon systems for factory production floors. Triggers tower lamps & sirens automatically upon machine stoppages or quality deviations."
+                },
+                tech: ["Andon Controller Board", "Industrial Relay Modules", "Tower Lights & Audio Buzzer", "Lean Manufacturing"],
+                impact: {
+                    id: "Menurunkan downtime mesin produksi dan mempercepat respon teknisi saat timbul kendala.",
+                    en: "Reduces machine downtime and accelerates operator response time during quality issues."
+                }
+            },
+            4: {
+                title: { id: "Top 3 Defect Collection System", en: "Top 3 Defect Collection System" },
+                category: { id: "Quality Management System (QMS)", en: "Quality Management System (QMS)" },
+                description: {
+                    id: "Tracker kualitas digital berbasis sensor proximity yang menghitung dan mengklasifikasikan produk cacat di jalur produksi untuk menampilkan 3 kategori cacat tertinggi per shift kerja.",
+                    en: "Digital quality tracker powered by proximity sensors counting and classifying defective products on the assembly line, displaying top 3 defect categories per shift."
+                },
+                tech: ["Proximity Sensors", "Digital Counter Module", "Shift Analytics Dashboard", "Quality Data Logging"],
+                impact: {
+                    id: "Memudahkan pengambilan keputusan tindakan korektif secara data-driven untuk menekan angka defect produk.",
+                    en: "Facilitates data-driven corrective action decisions to minimize product defect rates."
+                }
+            },
+            5: {
+                title: { id: "Auto Spray Anti-Fungal System", en: "Auto Spray Anti-Fungal System" },
+                category: { id: "Otomasi Semprot Otomatis", en: "Automated Spray Automation" },
+                description: {
+                    id: "Sistem penyemprotan cairan anti-jamur otomatis pada rak penyimpanan sepatu berbasis trigger sensor proximity dan relay control presisi tanpa intervensi manual.",
+                    en: "Automated anti-fungal solution spraying system on shoe storage racks triggered by proximity sensors and relay control without manual operation."
+                },
+                tech: ["Proximity Trigger", "Relay Control Module", "Solenoid Nozzle Pump", "Timer Controller"],
+                impact: {
+                    id: "Menghemat penggunaan cairan anti-jamur dan menjamin konsistensi sterilisasi rak.",
+                    en: "Saves anti-fungal chemical usage by 30% and guarantees consistent rack sterilization."
+                }
+            },
+            6: {
+                title: { id: "Skripsi: Development of PLC Trainer Media", en: "Thesis: Development of PLC Trainer Media" },
+                category: { id: "Tugas Akhir S1 UNNES & Otomasi Vokasi", en: "UNNES Bachelor Thesis & Vocational Automation" },
+                description: {
+                    id: "Tugas Akhir S1 Pendidikan Teknik Elektro UNNES merancang media modul praktikum PLC Outseal & Pneumatik interaktif untuk mendukung pembelajaran praktikum mahasiswa vokasi.",
+                    en: "UNNES Electrical Engineering Education thesis designing an interactive Outseal PLC & Pneumatic training module to support vocational practical learning."
+                },
+                tech: ["PLC Outseal", "FluidSIM Pneumatik", "Omron PLC", "Wiring Diagram Panel"],
+                impact: {
+                    id: "Digunakan sebagai media pembelajaran efektif di laboratorium teknik elektro UNNES.",
+                    en: "Utilized as an effective learning medium in UNNES electrical engineering laboratories."
+                }
+            }
+        };
+
+        function openProjectModal(id) {
+            const data = projectsData[id];
+            if (!data) return;
+
+            const lang = currentLang;
+
+            document.getElementById('modal-title').textContent = data.title[lang] || data.title.id;
+            document.getElementById('modal-badge').textContent = data.category[lang] || data.category.id;
+            document.getElementById('modal-description').textContent = data.description[lang] || data.description.id;
+            document.getElementById('modal-impact').textContent = data.impact[lang] || data.impact.id;
+
+            const techContainer = document.getElementById('modal-tech');
+            techContainer.innerHTML = '';
+            data.tech.forEach(t => {
+                const badge = document.createElement('span');
+                badge.className = 'px-3 py-1 rounded-lg bg-navy-50 text-navy-900 font-mono text-xs border border-navy-100';
+                badge.textContent = t;
+                techContainer.appendChild(badge);
+            });
+
+            document.getElementById('project-modal').classList.remove('hidden');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+        }
+
+        document.getElementById('project-modal').addEventListener('click', closeProjectModal);
+
+        // Contact Form Handling
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const submitBtn = document.getElementById('form-submit-btn');
+            const toast = document.getElementById('form-success-toast');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i data-lucide="loader" class="w-4 h-4 animate-spin text-gold-400"></i> Sending...`;
+            lucide.createIcons();
+
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                const sendText = currentLang === 'en' ? 'Send Message' : 'Kirimkan Pesan Saya';
+                submitBtn.innerHTML = `<i data-lucide="send" class="w-4 h-4 text-gold-400"></i> <span>${sendText}</span>`;
+                toast.classList.remove('hidden');
+                document.getElementById('contact-form').reset();
+                lucide.createIcons();
+
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 6000);
+            }, 1200);
+        }
+    </script>
+</body>
+</html>
